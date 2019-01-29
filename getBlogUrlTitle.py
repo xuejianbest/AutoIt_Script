@@ -8,7 +8,11 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.options import Options
 import time
 base_url = "https://mp.csdn.net"
+
+#若是想爬取其他分类下文章，只需要替换url变量
+#全部文章列表页面
 #url = "https://mp.csdn.net/postlist/list/all/%d"
+#公开文章列表页面
 url = "https://mp.csdn.net/postlist/list/enable/%d"
 
 file = open("url/blog_title.txt", "w", encoding='utf-8')
